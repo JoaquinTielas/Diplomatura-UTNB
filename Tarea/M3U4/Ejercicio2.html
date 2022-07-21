@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <h1>Contador de Caracteres</h1>
+    <textarea name="Texto" id="Texto" cols="30" rows="10" oninput="contador()" )></textarea>
+
+    <div id="Resultado">
+        Cantidad de Caracteres: 0
+    </div>
+
+    <script>
+        function contador() {
+            var Texto = document.getElementById('Texto')
+            var Resultado = document.getElementById('Resultado')
+            var Caracteres = Texto.value.length
+            Resultado.innerHTML = "Cantidad de Caracteres: " + Caracteres
+        }
+    </script>
+
+</body>
+
+</html>

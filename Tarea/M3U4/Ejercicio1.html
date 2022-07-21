@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="Ejercicio1.css">
+</head>
+
+<body>
+    <button id="Caja1">Fondo Rojo</button>
+    <button id="Caja2">Fondo Verde</button>
+    <button id="Caja3">Fondo Azul</button>
+
+    <script>
+        var fondo = document.getElementById('Caja1')
+        fondo.addEventListener('click', () => {
+            var color = document.querySelector('body')
+            color.style = 'background: red'
+        })
+
+        var fondo = document.getElementById('Caja2')
+        fondo.addEventListener('click', () => {
+            var color = document.querySelector('body')
+            color.style = 'background: green'
+        })
+
+        var fondo = document.getElementById('Caja3')
+        fondo.addEventListener('click', () => {
+            var color = document.querySelector('body')
+            color.style = 'background: blue'
+        })
+        
+
+    </script>
+
+</body>
+
+</html>

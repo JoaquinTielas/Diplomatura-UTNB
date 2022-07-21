@@ -1,0 +1,38 @@
+#contenedor {
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+
+#N1 {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#N2 {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#N3 {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,209 @@
+/*font-family: 'Dancing Script', cursive;*/
+
+body {
+    background-image: linear-gradient(to right top, #e02401, #d33406, #c53e0d, #b94615, #ac4b1c);
+    width: 100%;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(to right, #ac4b1c, #96381b, #7f2619, #681615, #51050f);
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+}
+
+nav {
+    position: fixed;
+    background-color: #7f2619;
+    top: 50px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #854238;
+}
+
+nav ul li a.Activo {
+    background-color: #854238;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 90px;
+    margin-left: 2%;
+    display: flex;
+    width: 96%;
+    padding: 0.5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #fca652, #e88f43, #d57835, #c06128, #ac4b1c);
+    box-shadow: 5px 8px 12px;
+}
+
+.Pie {
+    margin-top: 20px;
+    display: flex;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: #7f2619;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/** Inicio de contenido de Productos**/
+
+.Tarjetas {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border-radius: 0px 0px 20px 20px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    padding: 0;
+}
+
+.Tarjetas:hover {
+
+    box-shadow: 13px 13px 20px black;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+
+}
+
+.Tarjetas img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    filter: grayscale(90%);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.Tarjetas img:hover {
+    filter: grayscale(0%);
+}
+
+.Tarjetas h3 {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    margin-top: -4px;
+    margin-bottom: 0px;
+    height: 10%;
+}
+
+.Tarjetas p {
+    display: flex;
+    width: 100%;
+    background-color:white;
+    height: 22%;
+    margin-top: 0;
+    align-items: top;
+    justify-content: center; 
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+
+/** Inicio de contenido de Productos**/
+
+
+/** Inicio de contenido de Servicios**/
+
+.Titulo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    padding: 0;
+    height: 70px;
+}
+
+.Productos {
+    display: flex;
+    width: 400px;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.Productos:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 13px 20px black;
+}
+
+.Productos img {
+    width: 100%;
+}
+
+.Productos a {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    /*opacity: 0.8;*/
+    text-shadow: 8px 8px 8px 8px black;
+    text-decoration: none;
+
+}
+
+/** Fin de contenido de Servicios**/

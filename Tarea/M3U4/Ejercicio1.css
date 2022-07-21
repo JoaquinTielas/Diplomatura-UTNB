@@ -1,0 +1,35 @@
+#Caja1 {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#Caja2 {
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#Caja3 {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}

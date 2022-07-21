@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+
+    <script>
+        num = prompt("Ingrese 1er numero:", "")
+        var i = 0
+        var array = []
+        while (num != "x") {
+            array[i] = parseInt(num)
+            i = i + 1
+            num = prompt("Ingrese otro numero: (Para finalizar ingrese la letra x)", "")
+        }
+        var q = i
+        i = 0
+        var max = array[0]
+
+        while (i != q) {
+            if (max < array[i]) {
+                max = array[i]
+            }
+            i = i + 1
+        }
+        document.write("El mayor es: ", max)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+#Comentario{
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgreen;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    width: 280px;
+    margin-left: 10px;  
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -3px 3px 4px rgb(7, 7, 7);
+    font-family: 'Courgette', cursive;
+}
+
+#Nombre{
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(to bottom, rgb(50, 92, 3), rgb(0, 252, 84));
+    border: 1px solid black;
+    width: 518px;
+    padding-left: 140px;
+    box-sizing: border-box;
+    border-radius: 30px 30px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Titulos{
+    color: white;
+    background-color: rgb(100, 179, 100);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 518px;
+    box-sizing: border-box;
+    border: 1px dashed black;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 3px 5px rgb(7, 7, 7);
+    font-family: 'Akshar', sans-serif;
+}
+
+p{
+    font-weight: bold;
+    font-family: 'Akshar', sans-serif;
+}

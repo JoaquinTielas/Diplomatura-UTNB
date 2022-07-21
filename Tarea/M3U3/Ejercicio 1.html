@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        dist = prompt("Ingrese la distancia:",)
+
+        if (dist < 1000) { document.write("Se debe ir a pie") }
+        {
+            if (dist > 1000 && dist < 10000) { document.write("Se debe utilizar una bicicleta") }
+            {
+                if (dist > 10000 && dist < 30000) { document.write("Se debe utilizar un colectivo") }
+            }
+            {
+                if (dist > 30000 && dist < 100000) { document.write("Se debe utilizar un auto") }
+                {
+                    if (dist > 100000) { document.write("Se debe utilizar un avion") }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

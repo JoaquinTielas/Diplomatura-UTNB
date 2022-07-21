@@ -1,0 +1,75 @@
+main {
+    margin-top: 90px;
+    margin-left: 2%;
+    display: flex;
+    width: 96%;
+    padding: 0.5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #fca652, #e88f43, #d57835, #c06128, #ac4b1c);
+    box-shadow: 5px 8px 12px;
+}
+
+.Tarjetas {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border-radius: 0px 0px 20px 20px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    padding: 0;
+}
+
+.Tarjetas:hover {
+
+    box-shadow: 13px 13px 20px black;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+
+}
+
+.Tarjetas img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    filter: grayscale(90%);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.Tarjetas img:hover {
+    filter: grayscale(0%);
+}
+
+.Tarjetas h3 {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    margin-top: -4px;
+    margin-bottom: 0px;
+    height: 10%;
+}
+
+.Tarjetas p {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 22%;
+    margin-top: 0;
+    align-items: top;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
