@@ -1,2 +1,25 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{#if conocido}}
+    <h1>Hola {{nombre.nombre}} <a href="/Salir">Salir</a></h1>
+    {{/if}}
+    {{#unless conocido}}
+    <h1>No te conozco</h1>
+    <form action="/Registro" method="POST">
+        <input type="name" name="nombre" placeholder="Ingresa tu nombre" autofocus>
+        <button>Enviar</button>
+    </form>
+    {{/unless}}
+</body>
+
+</html>
