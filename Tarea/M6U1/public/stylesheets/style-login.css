@@ -1,0 +1,12 @@
+.Contenedor{
+    display: flex;
+    flex-direction: column;
+    border: rgb(223, 215, 215) 1px solid; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 200px;
+    box-shadow: 4px 4px 10px 0px rgb(223, 215, 215);
+}
