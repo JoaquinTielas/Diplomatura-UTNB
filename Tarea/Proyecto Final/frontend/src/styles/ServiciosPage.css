@@ -1,0 +1,45 @@
+
+.Titulo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    padding: 0;
+    height: 70px;
+}
+
+.Productos {
+    display: flex;
+    width: 400px;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.Productos:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 13px 20px black;
+}
+
+.Productos img {
+    width: 100%;
+}
+
+.Productos a {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    /*opacity: 0.8;*/
+    text-shadow: 8px 8px 8px 8px black;
+    text-decoration: none;
+
+}

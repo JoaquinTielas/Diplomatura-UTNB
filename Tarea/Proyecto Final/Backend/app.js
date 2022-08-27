@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
+var cors = require('cors');
 
 
 
@@ -15,6 +17,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var adminRouter = require('./routes/admin');
+var agregarRouter = require('./routes/agregar');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -37,6 +41,13 @@ app.use(session({
   secret: 'mysecretkey_JT'
 }));
 
+app.use(fileUpload(
+  {
+    useTempFiles: true,
+    tempFileDir:'/tmp/'
+  }
+));
+
 seguridad = async (req, res, next) => {     //Autenticacion con variables de session
   try {
     console.log(req.session.ID);
@@ -54,13 +65,14 @@ seguridad = async (req, res, next) => {     //Autenticacion con variables de ses
 }
 
 
-
 //ENRUTAMIENTOS
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/admin', seguridad, adminRouter);
+app.use('/Agregar', agregarRouter);
+app.use('/api', cors(), apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

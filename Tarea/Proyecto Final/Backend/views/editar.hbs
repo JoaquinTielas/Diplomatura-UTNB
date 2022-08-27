@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion</title>
+</head>
+
+<body>
+    {{#each datos}}
+    <form action="/admin/editar/{{ID}}" method="post" enctype="multipart/form-data">
+        <input type="hidden" value="{{ID}}" name="ID">
+        <input type="text" value="{{Servicio}}" name="Servicio" placeholder="Titulo" autofocus>
+        <textarea type="text" name="Descripcion" placeholder="Ingrese Descripcion">{{Descripcion}}</textarea>
+        <input type="hidden" value="{{Img_ID}}" name="Img_Original">
+        <input type="file" name="Img_Nueva">
+        <input type="checkbox" name="Img_Borrar" value="1">Eliminar Imagen
+        <button type="submit">Editar</button>
+    </form>
+    {{/each}}
+</body>
+
+</html>

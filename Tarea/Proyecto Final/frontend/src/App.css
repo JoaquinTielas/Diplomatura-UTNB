@@ -1,0 +1,10 @@
+body {
+  background-image: linear-gradient(to right top, #e02401, #d33406, #c53e0d, #b94615, #ac4b1c);
+  width: 100%;
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

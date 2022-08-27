@@ -7,11 +7,15 @@ var uploader = util.promisify(cloudinary.uploader.upload);
 var destroy = util.promisify(cloudinary.uploader.destroy);
 
 var colors = require('colors');
+const { addAbortSignal } = require('stream');
+const { assert } = require('console');
 
 
 /* GET users listing. */
 router.get('/', async function (req, res, next) {
   var servicios = await getServicios.getServicios();
+  console.log(servicios)
+
 
   servicios = servicios.map(servicios => {
     if (servicios.Img_ID) {
@@ -39,6 +43,14 @@ router.get('/', async function (req, res, next) {
 
 router.get('/eliminar/:ID', async (req, res, next) => {
   var ID = req.params.ID;
+
+  var eliminar = await getServicios.getServiciosbyID(ID);
+  console.log(eliminar)
+  console.log(eliminar[0].Img_ID)
+
+  if (eliminar[0].Img_ID) {
+    await (destroy(eliminar[0].Img_ID));
+  }
   await getServicios.delateServicios(ID);
   res.redirect('/admin')
 });
