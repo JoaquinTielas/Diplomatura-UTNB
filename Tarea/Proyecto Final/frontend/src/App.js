@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage';
 import PresupuestoPage from './pages/PresupuestoPage';
 import ProductosPage from './pages/ProductosPage';
 import ServiciosPage from './pages/ServiciosPage';
-import ContactoPage from './pages/ContactoPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -21,11 +20,10 @@ function App() {
       <BrowserRouter>
         <Nav></Nav>
         <Routes>
-          <Route path='Home' element={<HomePage />} />
+          <Route path='' element={<HomePage />} />
           <Route path='Presupuestos' element={<PresupuestoPage />} />
           <Route path='Productos' element={<ProductosPage />} />
           <Route path='Servicios' element={<ServiciosPage />} />
-          <Route path='Contacto' element={<ContactoPage />} />
         </Routes>
       </BrowserRouter>
 

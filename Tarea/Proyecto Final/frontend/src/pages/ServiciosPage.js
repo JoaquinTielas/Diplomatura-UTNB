@@ -26,7 +26,7 @@ const ServiciosPage = (props) => {
                 loading ? (
                     <p>Cargando...</p>
                 ) : (
-                    servicios.map(item => <ServicioItem key={item.ID} title={item.Servicio} description={item.Descripcion} imagen={item.Img_ID}/>)
+                    servicios.map(item => <ServicioItem key={item.ID} title={item.Servicio} description={item.Descripcion} imagen={item.imagen}/>)
                 )
             }
 
