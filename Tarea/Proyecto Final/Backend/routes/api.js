@@ -8,13 +8,12 @@ router.get('/', async function (req, res, next) {
   var servicios = await getServicios.getServicios();
   console.log(servicios)
 
-
   servicios = servicios.map(servicios => {
     if (servicios.Img_ID) {
       var imagen = cloudinary.url(servicios.Img_ID, {
-        width: 960,
+        width: 500,
         height: 200,
-        crop: 'fill'
+        crop: 'fill',
       })
       return ({ ...servicios, imagen })
     }
@@ -34,7 +33,7 @@ router.post('/Presupuestos', async (req, res) => {
   const mail = {
     to: 'joaquintielas@gmail.com',
     subject: 'Contacto Web',
-    html: `${req.body.nombre} ${req.body.apellido} se contacto para pedir un presupuesto al telefono ${req.body.telefono} y al email ${req.body.email}`
+    html: `${req.body.nombre} ${req.body.apellido} se contacto para pedir un presupuesto al telefono ${req.body.telefono} y al email ${req.body.mail}. Quiere reparar ${req.body.opcion} y dejo el siguiente mensaje: ${req.body.mensaje}`
   }
 
   const transport = nodemailer.createTransport({
@@ -48,10 +47,7 @@ router.post('/Presupuestos', async (req, res) => {
 
   await transport.sendMail(mail);
 
-  res.status(201).json({
-    error: false,
-    message: 'Mensaje enviado'
-  });
-});
+  res.redirect('http://localhost:3001/Presupuestos');
+ });
 
 module.exports = router;

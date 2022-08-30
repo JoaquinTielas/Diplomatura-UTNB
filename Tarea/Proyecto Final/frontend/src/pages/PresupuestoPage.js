@@ -1,6 +1,6 @@
 import '../styles/PresupuestoPage.css'
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const PresupuestoPage = (props) => {
@@ -11,7 +11,7 @@ const PresupuestoPage = (props) => {
         telefono: '',
         mail: '',
         opcion: '',
-        mensaje: '',
+        mensaje: ''
     }
 
     const [sending, setSending] = useState(false);
@@ -46,7 +46,7 @@ const PresupuestoPage = (props) => {
                     <p>Presupuestos y Consultas</p>
                 </div>
 
-                <form action="/api/Presupuestos" method='post' onSubmit={handleSubmit}>
+                <form action="http://localhost:3000/api/Presupuestos" method='post' onSubmit={handleSubmit}>
                     <h2>Presupuestos personalizados</h2>
                     <input type="text" placeholder="Nombre" className="input" name='nombre' value={formData.nombre} onChange={handleCharge}></input>
                     <input type="text" placeholder="Apellido" className="input" name='apellido' value={formData.apellido} onChange={handleCharge}></input>
@@ -73,8 +73,7 @@ const PresupuestoPage = (props) => {
 
                 </form>
 
-                {sending ? <p>Enviando ...</p> : null}
-                {msg ? <p>{msg}</p> : null}
+
             </div>
         </main>
     );
